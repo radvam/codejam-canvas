@@ -24,4 +24,26 @@ function draw(data, type) {
           ctx.fillRect(i * pixel, j * pixel, pixel, pixel);
       }
   }
-}  
+} 
+
+let button4 = document.getElementById('btn-4');
+let button32 = document.getElementById('btn-32');
+
+ctx.fillStyle="#CDCDCB";
+ctx.fillRect(0,0,canvas.width, canvas.height);
+
+button4.addEventListener('click', () => {
+    draw(json4, 'hex');
+});
+
+button32.addEventListener('click', () => {
+    draw(json32, 'rgba');
+});
+
+let image = document.getElementById('btn-image');
+const img = new Image();
+img.src = 'data/image.png';
+
+image.addEventListener('click', () => {
+    ctx.drawImage(img, 0, 0, canvas.width, canvas.height);
+});
