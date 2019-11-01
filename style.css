@@ -1,0 +1,77 @@
+html, body {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+
+.wrapper {
+  position: relative;
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding: 0 30px;
+  width: 100%;
+  min-width: 1024px;
+  max-width: 1440px;
+}
+
+.header-wrapper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.24), 0px 0px 4px rgba(0, 0, 0, 0.12);
+}
+
+.header {
+  width: 100%;
+  height: 50px;
+}
+
+
+
+.header--button_before {
+  position: relative;
+  width: 24px;
+  height: 24px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.header--button_before::after {
+  content: url(img/header--button_before.png);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.header--title {
+  margin: 0 auto; 
+  font-family: 'Raleway', sans-serif;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 20px;
+  line-height: 23px;
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.87);
+}
+
+.header--button_after {
+  position: relative;
+  width: 12px;
+  height: 24px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.header--button_after::after {
+  content: url(img/header--button_after.png);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
