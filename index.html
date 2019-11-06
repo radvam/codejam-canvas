@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css?family=Raleway|Sarala&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Electrolize&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Audiowide&display=swap" rel="stylesheet">
+  <title>CodeJam-Canvas</title>
+</head>
+<body>
+  <header class="header">
+    <div class="wrapper header-wrapper">
+        <button type="button" class="header--button_before"></button>
+        <a class="header--title" href="#">CodeJam-Canvas</a>
+        <button type="button" class="header--button_after"></button>
+    </div>
+  </header>
+  <main class="main">
+    <div class="wrapper">
+        <section class="block_tools">
+            <button type="button" class="block_tools--button button_paint">Paint bucket</button>
+            <button type="button" class="block_tools--button button_choose">Choose color</button>
+            <button type="button" class="block_tools--button button_move">Move</button>
+            <button type="button" class="block_tools--button button_transform">Transform</button>
+        </section>
+        <section class="block_colors">
+            <button type="button" class="block_colors--button button_current">Current color</button>
+            <button type="button" class="block_colors--button button_prev">Prev color</button>
+            <button type="button" class="block_colors--button button_red">Red</button>
+            <button type="button" class="block_colors--button button_blue">Blue</button>
+        </section>
+        <section class="block_switch">
+            <button type="button" id="btn-4" class="block_switch--button button_4x4">4x4</button>
+            <button type="button" id="btn-32" class="block_switch--button switcher__button_32x32">32x32</button>
+            <button type="button" id="btn-image" class="block_switch--button switcher__button_image">Image</button>
+        </section>
+        <section class="block_canvas">
+            <canvas width="512" height="512" id="canvas"></canvas>
+        </section>
+    </div>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
