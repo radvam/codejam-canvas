@@ -1,3 +1,3 @@
-# codejam-canvas
+# Codejam-canvas
 
-[Deploy project](https://radvam.github.io/codejam-canvas/)
+## [Deploy project](https://radvam.github.io/codejam-canvas/)
